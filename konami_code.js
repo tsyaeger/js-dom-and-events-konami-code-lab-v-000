@@ -8,7 +8,7 @@ const body = document.querySelector('body')
 body.addEventListener('keydown', function(e) {
   alert(e.which)
 })
-}
+
 
 
 function onKeyDownHandler(e) {
@@ -26,3 +26,9 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
+
+
+
+}
+
+
