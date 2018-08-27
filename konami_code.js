@@ -5,8 +5,8 @@ function init() {
 
 }
 
-const body = document.getElementById('body')
+const body = document.querySelector('body')
  
-body.addEventListener('click', function(event) {
-  alert('I was clicked!')
+body.addEventListener('keydown', function(e) {
+  console.log(e.which)
 })
