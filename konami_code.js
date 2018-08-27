@@ -5,8 +5,8 @@ function init() {
 
 }
 
-const main = document.getElementById('main')
+const body = document.getElementById('body')
  
-main.addEventListener('click', function(event) {
+body.addEventListener('click', function(event) {
   alert('I was clicked!')
 })
