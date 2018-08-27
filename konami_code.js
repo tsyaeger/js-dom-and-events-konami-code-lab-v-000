@@ -8,6 +8,21 @@ const body = document.querySelector('body')
 body.addEventListener('keydown', function(e) {
   alert(e.which)
 })
+}
 
 
+function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which);
+ 
+  if (key === alphabet[index]) {
+    index++;
+ 
+    if (index === alphabet.length) {
+      alert("Hurray!");
+ 
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
 }
