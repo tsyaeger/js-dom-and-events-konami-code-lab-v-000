@@ -8,20 +8,22 @@ function init() {
    
   body.addEventListener('keydown', function(e) {
     let key = parseInt(e.detail || e.which);
-  })
-  
-  
-    if (key === alphabet[index]) {
-      index++;
+    
+    if (key === alphabet[index]) {index++;
    
-      if (index === alphabet.length) {
-        alert("Hurray!");
-   
-        index = 0;
-      }
+        if (index === alphabet.length) {
+          alert("Hurray!");
+     
+          index = 0;
+        }
     } else {
       index = 0;
     }
+    
+  })
+  
+  
+
   }
   
 
